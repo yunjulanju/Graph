@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BFS.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

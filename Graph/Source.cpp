@@ -32,38 +32,38 @@ void DFS(int CurrentY, int CurrentX )
 		DFS(NextY, NextX);
 	}		
 }
-
-int main()
-{
-	int M, N, K;
-
-	cin >> M >> N >> K;
-
-	Array.assign(N, vector<int>(M, 0));
-	visited.assign(N, vector<bool>(M, false));
-
-	for (int i = 0; i < K; i++)
-	{
-		int X, Y;
-		cin >> X >> Y;
-
-		Array[Y][X] = 1;
-	}
-
-	int C = 0;
-	
-	for (int Y = 0; Y < N; Y++)
-	{
-		for (int X = 0; X < M; X++)
-		{
-			if (visited[Y][X] == false && Array[Y][X] == 1)
-			{
-				DFS(Y, X);
-				C++;				
-			}
-		}		
-	}
-
-	cout << C;
-
-}
+//
+//int main()
+//{
+//	int M, N, K;
+//
+//	cin >> M >> N >> K;
+//
+//	Array.assign(N, vector<int>(M, 0));
+//	visited.assign(N, vector<bool>(M, false));
+//
+//	for (int i = 0; i < K; i++)
+//	{
+//		int X, Y;
+//		cin >> X >> Y;
+//
+//		Array[Y][X] = 1;
+//	}
+//
+//	int C = 0;
+//	
+//	for (int Y = 0; Y < N; Y++)
+//	{
+//		for (int X = 0; X < M; X++)
+//		{
+//			if (visited[Y][X] == false && Array[Y][X] == 1)
+//			{
+//				DFS(Y, X);
+//				C++;				
+//			}
+//		}		
+//	}
+//
+//	cout << C;
+//
+//}
